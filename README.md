@@ -22,8 +22,8 @@ This file is updated every Sunday at 1:00AM.
 
 Download links:
 
-* [DATA LAYOUT FIL](https://forms.irs.gov/app/pod/dataDownload/dataLayout)
-* [FULL DATABASEE ~ 1.9 gigs unzipped](https://forms.irs.gov/app/pod/dataDownload/fullData)
+* [DATA LAYOUT FILE](https://forms.irs.gov/app/pod/dataDownload/dataLayout)
+* [FULL DATABASE ~ 1.9 gigs unzipped](https://forms.irs.gov/app/pod/dataDownload/fullData)
 
 OR separately by org type: 
 
