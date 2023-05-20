@@ -101,6 +101,7 @@ build_all <- function( file.name=NULL )
 
 
 
+
 get_form_x <- function( file.name=NULL, x=NULL, form.type )
 {
   
@@ -151,13 +152,13 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   
   ## "FOOTER
 
-  varname.f <-
+  varnames.f <-
     c("RECORD_TYPE_CODE", "TRANSMISSION_DATE", "TRANSMISSION_TIME", 
       "RECORD_COUNT")
 
   ## HEADER
 
-  varname.h <-
+  varnames.h <-
     c("RECORD_TYPE_CODE", "TRANSMISSION_DATE", "TRANSMISSION_TIME", 
       "FILE_ID_MODIFIER")
 
@@ -172,7 +173,7 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
 
   ## SCHED-B
 
-  varname.b <-
+  varnames.b <-
     c("RECORD_TYPE", "FORM_ID_NUMBER", "SCHED_B_ID", "ORG_NAME", 
       "EIN", "RECIEPIENT_NAME", "RECIEPIENT_ADDRESS_1", "RECIEPIENT_ADDRESS_2", 
       "RECIEPIENT_ADDRESS_CITY", "RECIEPIENT_ADDRESS_ST", "RECIEPIENT_ADDRESS_ZIP_CODE", 
@@ -181,7 +182,7 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
 
   ## SCHED-D
 
-  varname.d <-
+  varnames.d <-
     c("RECORD_TYPE", "FORM_ID_NUMBER", "DIRECTOR_ID", "ORG_NAME", 
       "EIN", "ENTITY_NAME", "ENTITY_TITLE", "ENTITY_ADDRESS_1", "ENTITY_ADDRESS_2", 
       "ENTITY_ADDRESS_CITY", "ENTITY_ADDRESS_ST", "ENTITY_ADDRESS_ZIP_CODE", 
@@ -189,14 +190,14 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
 
   ## SCHED-E
 
-  varname.e <-
+  varnames.e <-
     c("RECORD_TYPE", "FORM_ID_NUMBER", "EAIN_ID", "ELECTION_AUTHORITY_ID_NUMBER", 
       "STATE_ISSUED")
 
 
   ## SCHED-R
 
-  varname.r <-
+  varnames.r <-
     c("RECORD_TYPE", "FORM_ID_NUMBER", "ENTITY_ID", "ORG_NAME", "EIN", 
       "ENTITY_NAME", "ENTITY_RELATIONSHIP", "ENTITY_ADDRESS_1", "ENTITY_ADDRESS_2", 
       "ENTITY_ADDRESS_CITY", "ENTITY_ADDRESS_ST", "ENTITY_ADDRESS_ZIP_CODE", 
@@ -242,6 +243,8 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   return( df )
   
 }
+
+
 
 
 
