@@ -251,24 +251,6 @@ File Metadata
 
 
 
-### SCHED-H
-
-
-|IRS_FIELD_NAME    |SIZE     |VALID_VALUES                              |FORMAT       |DESCRIPTION                                                                                                                                                     |FORMTYPE | ORDER|F_ORDER    |VARNAME           |
-|:-----------------|:--------|:-----------------------------------------|:------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------|-----:|:----------|:-----------------|
-|Record Type Code  |1        |H                                         |Character    |Designates a file header                                                                                                                                        |SCHED-H  |     1|SCHED-H-01 |RECORD_TYPE_CODE  |
-|Transmission Date |-8       |SYSDATE                                   |Alphanumeric |Date file is created                                                                                                                                            |SCHED-H  |     3|SCHED-H-03 |TRANSMISSION_DATE |
-|                  |yyyymmdd |                                          |             |                                                                                                                                                                |SCHED-H  |     4|SCHED-H-04 |                  |
-|Transmission Time |-4       |SYSDATE                                   |Alphanumeric |Time file is created                                                                                                                                            |SCHED-H  |     6|SCHED-H-06 |TRANSMISSION_TIME |
-|                  |hhmm     |                                          |             |                                                                                                                                                                |SCHED-H  |     7|SCHED-H-07 |                  |
-|File ID Modifier  |-1       |A for first part of alphabet transmission |Character    |This designates the file that the user downloaded.  The user has the option to download a full data file; or separate smaller data files broken up by alphabet. |SCHED-H  |     9|SCHED-H-09 |FILE_ID_MODIFIER  |
-|                  |         |B for second transmission                 |             |                                                                                                                                                                |SCHED-H  |    10|SCHED-H-10 |                  |
-|                  |         |C for third transmission                  |             |                                                                                                                                                                |SCHED-H  |    11|SCHED-H-11 |                  |
-|                  |         |D for fourth transmission                 |             |                                                                                                                                                                |SCHED-H  |    12|SCHED-H-12 |                  |
-|                  |         |F for full data transmission              |             |                                                                                                                                                                |SCHED-H  |    13|SCHED-H-13 |                  |
-
-
-
 
 
 ## Metadata
