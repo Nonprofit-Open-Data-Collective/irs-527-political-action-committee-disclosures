@@ -5,13 +5,13 @@ Form Type,10,8871,Numeric,,FM-8871,3,FM-8871-3,FORM_TYPE
 Pipe_Delimiter,1,pipe,Character,,FM-8871,4,FM-8871-4,PIPE_DELIMITER
 Form ID Number,Up to 38 digits,,Numeric,,FM-8871,5,FM-8871-5,FORM_ID_NUMBER
 Pipe_Delimiter,1,pipe,Character,,FM-8871,6,FM-8871-6,PIPE_DELIMITER
-Initial Report Indicator,1,1' or '0',Numeric,1 = Initial Report,FM-8871,7,FM-8871-7,INITIAL_REPORT_INDICATOR
+Initial Report Indicator,1,1 or 0,Numeric,1 = Initial Report,FM-8871,7,FM-8871-7,INITIAL_REPORT_INDICATOR
 ,,,,0 = Not Initial,FM-8871,8,FM-8871-8,
 Pipe_Delimiter,1,pipe,Character,,FM-8871,9,FM-8871-9,PIPE_DELIMITER
-Amended Report Indicator,1,1' or '0',Numeric,1 = Amended,FM-8871,10,FM-8871-10,AMENDED_REPORT_INDICATOR
+Amended Report Indicator,1,1 or 0,Numeric,1 = Amended,FM-8871,10,FM-8871-10,AMENDED_REPORT_INDICATOR
 ,,,,0 = Not Amended,FM-8871,11,FM-8871-11,
 Pipe_Delimiter,1,pipe,Character,,FM-8871,12,FM-8871-12,PIPE_DELIMITER
-Final Report Indicator,1,1' or '0',Numeric,1 = Final Report,FM-8871,13,FM-8871-13,FINAL_REPORT_INDICATOR
+Final Report Indicator,1,1 or 0,Numeric,1 = Final Report,FM-8871,13,FM-8871-13,FINAL_REPORT_INDICATOR
 ,,,,0 = Not Final,FM-8871,14,FM-8871-14,
 Pipe_Delimiter,1,pipe,Character,,FM-8871,15,FM-8871-15,PIPE_DELIMITER
 EIN,9,,AlphaNumeric,,FM-8871,16,FM-8871-16,EIN
@@ -75,11 +75,11 @@ BUSINESS ADDRESS ZIP CODE,5,,AlphaNumeric,,FM-8871,73,FM-8871-73,BUSINESS_ADDRES
 Pipe_Delimiter,1,pipe,Character,,FM-8871,74,FM-8871-74,PIPE_DELIMITER
 BUSINESS ADDRESS ZIP EXT,4,,AlphaNumeric,,FM-8871,75,FM-8871-75,BUSINESS_ADDRESS_ZIP_EXT
 Pipe_Delimiter,1,pipe,Character,,FM-8871,76,FM-8871-76,PIPE_DELIMITER
-EXEMPT 8872 INDICATOR,1,1' or '0',AlphaNumeric,,FM-8871,77,FM-8871-77,EXEMPT_8872_INDICATOR
+EXEMPT 8872 INDICATOR,1,1 or 0,AlphaNumeric,,FM-8871,77,FM-8871-77,EXEMPT_8872_INDICATOR
 Pipe_Delimiter,1,pipe,Character,,FM-8871,78,FM-8871-78,PIPE_DELIMITER
 EXEMPT STATE,2,,AlphaNumeric,,FM-8871,79,FM-8871-79,EXEMPT_STATE
 Pipe_Delimiter,1,pipe,Character,,FM-8871,80,FM-8871-80,PIPE_DELIMITER
-EXEMPT 990 INDICATOR,1,1' or '0',AlphaNumeric,,FM-8871,81,FM-8871-81,EXEMPT_990_INDICATOR
+EXEMPT 990 INDICATOR,1,1 or 0,AlphaNumeric,,FM-8871,81,FM-8871-81,EXEMPT_990_INDICATOR
 Pipe_Delimiter,1,pipe,Character,,FM-8871,82,FM-8871-82,PIPE_DELIMITER
 PURPOSE,512,,AlphaNumeric,,FM-8871,83,FM-8871-83,PURPOSE
 Pipe_Delimiter,1,pipe,Character,,FM-8871,84,FM-8871-84,PIPE_DELIMITER
@@ -87,13 +87,13 @@ MATERIAL CHANGE DATE,8,,AlphaNumeric,,FM-8871,85,FM-8871-85,MATERIAL_CHANGE_DATE
 Pipe_Delimiter,1,pipe,Character,,FM-8871,86,FM-8871-86,PIPE_DELIMITER
 INSERT_DATETIME,19,YYYY-MM-DD HH24:MI:SS,Datetime,,FM-8871,87,FM-8871-87,INSERT_DATETIME
 Pipe_Delimiter,1,pipe,Character,,FM-8871,88,FM-8871-88,PIPE_DELIMITER
-RELATED_ENTITY_BYPASS,1,1' or '0',AlphaNumeric,0 = Entities Exist,FM-8871,89,FM-8871-89,RELATED_ENTITY_BYPASS
+RELATED_ENTITY_BYPASS,1,1 or 0,AlphaNumeric,0 = Entities Exist,FM-8871,89,FM-8871-89,RELATED_ENTITY_BYPASS
 ,,,,1 = No Entities,FM-8871,90,FM-8871-90,
 Pipe_Delimiter,1,pipe,Character,,FM-8871,91,FM-8871-91,PIPE_DELIMITER
-EAIN_BYPASS,1,1' or '0',AlphaNumeric,0 = EAIN(s) Exist,FM-8871,92,FM-8871-92,EAIN_BYPASS
+EAIN_BYPASS,1,1 or 0,AlphaNumeric,0 = EAIN(s) Exist,FM-8871,92,FM-8871-92,EAIN_BYPASS
 ,,,,1 = No EAINS,FM-8871,93,FM-8871-93,
 Pipe_Delimiter,1,pipe,Character,,FM-8871,94,FM-8871-94,PIPE_DELIMITER
-Record Type,1,2',Alphanumeric,Designates an 8872 Form Record,FM-8872,1,FM-8872-1,RECORD_TYPE
+Record Type,1,2,Alphanumeric,Designates an 8872 Form Record,FM-8872,1,FM-8872-1,RECORD_TYPE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,2,FM-8872-2,PIPE_DELIMITER
 Form Type,10,8872,Numeric,,FM-8872,3,FM-8872-3,FORM_TYPE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,4,FM-8872-4,PIPE_DELIMITER
@@ -103,16 +103,16 @@ PERIOD Begin Date,8,,AlphaNumeric,,FM-8872,7,FM-8872-7,PERIOD_BEGIN_DATE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,8,FM-8872-8,PIPE_DELIMITER
 PERIOD End Date,8,,AlphaNumeric,,FM-8872,9,FM-8872-9,PERIOD_END_DATE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,10,FM-8872-10,PIPE_DELIMITER
-Initial Report Indicator,1,1' or '0',Numeric,1 = Initial Report,FM-8872,11,FM-8872-11,INITIAL_REPORT_INDICATOR
+Initial Report Indicator,1,1 or 0,Numeric,1 = Initial Report,FM-8872,11,FM-8872-11,INITIAL_REPORT_INDICATOR
 ,,,,0 = Not Initial,FM-8872,12,FM-8872-12,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,13,FM-8872-13,PIPE_DELIMITER
-Amended Report Indicator,1,1' or '0',Numeric,1 = Amended,FM-8872,14,FM-8872-14,AMENDED_REPORT_INDICATOR
+Amended Report Indicator,1,1 or 0,Numeric,1 = Amended,FM-8872,14,FM-8872-14,AMENDED_REPORT_INDICATOR
 ,,,,0 = Not Amended,FM-8872,15,FM-8872-15,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,16,FM-8872-16,PIPE_DELIMITER
-Final Report Indicator,1,1' or '0',Numeric,1 = Final Report,FM-8872,17,FM-8872-17,FINAL_REPORT_INDICATOR
+Final Report Indicator,1,1 or 0,Numeric,1 = Final Report,FM-8872,17,FM-8872-17,FINAL_REPORT_INDICATOR
 ,,,,0 = Not Final,FM-8872,18,FM-8872-18,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,19,FM-8872-19,PIPE_DELIMITER
-Change of Address Indicator,1,1' or '0',Numeric,1 = Address has changed,FM-8872,20,FM-8872-20,CHANGE_OF_ADDRESS_INDICATOR
+Change of Address Indicator,1,1 or 0,Numeric,1 = Address has changed,FM-8872,20,FM-8872-20,CHANGE_OF_ADDRESS_INDICATOR
 ,,,,0 = Address has not changed,FM-8872,21,FM-8872-21,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,22,FM-8872-22,PIPE_DELIMITER
 ORGANIZATION NAME,70,,AlphaNumeric,,FM-8872,23,FM-8872-23,ORGANIZATION_NAME
@@ -175,36 +175,36 @@ BUSINESS ADDRESS ZIP CODE,5,,AlphaNumeric,,FM-8872,79,FM-8872-79,BUSINESS_ADDRES
 Pipe_Delimiter,1,pipe,Character,,FM-8872,80,FM-8872-80,PIPE_DELIMITER
 BUSINESS ADDRESS ZIP EXT,4,,AlphaNumeric,,FM-8872,81,FM-8872-81,BUSINESS_ADDRESS_ZIP_EXT
 Pipe_Delimiter,1,pipe,Character,,FM-8872,82,FM-8872-82,PIPE_DELIMITER
-QTR INDICATOR,1,1' – '8',Alphanumeric,'1' = First Quarterly ,FM-8872,83,FM-8872-83,QTR_INDICATOR
-,,,,'2' = Second Quarterly,FM-8872,84,FM-8872-84,
-,,,,'3' = Third Quarterly '4' = Year-end ,FM-8872,85,FM-8872-85,
-,,,,'5' = Mid-Year ,FM-8872,86,FM-8872-86,
-,,,,'6' = Monthly,FM-8872,87,FM-8872-87,
-,,,,'7' = Pre-election ,FM-8872,88,FM-8872-88,
-,,,,'8' = Post-election ,FM-8872,89,FM-8872-89,
+QTR INDICATOR,1,1  to  8,Alphanumeric,1 = First Quarterly ,FM-8872,83,FM-8872-83,QTR_INDICATOR
+,,,,2 = Second Quarterly,FM-8872,84,FM-8872-84,
+,,,,3 = Third Quarterly 4 = Year-end ,FM-8872,85,FM-8872-85,
+,,,,5 = Mid-Year ,FM-8872,86,FM-8872-86,
+,,,,6 = Monthly,FM-8872,87,FM-8872-87,
+,,,,7 = Pre-election ,FM-8872,88,FM-8872-88,
+,,,,8 = Post-election ,FM-8872,89,FM-8872-89,
 ,,,,,FM-8872,90,FM-8872-90,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,91,FM-8872-91,PIPE_DELIMITER
-MONTHLY RPT MONTH,2,"If Monthly, 1-12, else NULL",AlphaNumeric,"If QTR Indicator - Monthly, Month is filled",FM-8872,92,FM-8872-92,MONTHLY_RPT_MONTH
+MONTHLY RPT MONTH,2,If Monthly; 1-12; else NULL,AlphaNumeric,If QTR Indicator - Monthly; Month is filled,FM-8872,92,FM-8872-92,MONTHLY_RPT_MONTH
 Pipe_Delimiter,1,pipe,Character,,FM-8872,93,FM-8872-93,PIPE_DELIMITER
-PRE ELECT TYPE,10,"If PreElect, Else Null",AlphaNumeric,Null if this is a post election rpt,FM-8872,94,FM-8872-94,PRE_ELECT_TYPE
+PRE ELECT TYPE,10,If PreElect; Else Null,AlphaNumeric,Null if this is a post election rpt,FM-8872,94,FM-8872-94,PRE_ELECT_TYPE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,95,FM-8872-95,PIPE_DELIMITER
 PRE or POST ELECT DATE,8,,AlphaNumeric,,FM-8872,96,FM-8872-96,PRE_OR_POST_ELECT_DATE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,97,FM-8872-97,PIPE_DELIMITER
 PRE or POST ELECT STATE,2,,AlphaNumeric,,FM-8872,98,FM-8872-98,PRE_OR_POST_ELECT_STATE
 Pipe_Delimiter,1,pipe,Character,,FM-8872,99,FM-8872-99,PIPE_DELIMITER
-SCHED_A_IND,1,1' or '0',AlphaNumeric,1 = No Sched A,FM-8872,100,FM-8872-100,SCHED_A_IND
+SCHED_A_IND,1,1 or 0,AlphaNumeric,1 = No Sched A,FM-8872,100,FM-8872-100,SCHED_A_IND
 ,,,,0 = Sched A exists,FM-8872,101,FM-8872-101,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,102,FM-8872-102,PIPE_DELIMITER
 TOTAL_SCHED_A,19,,numeric,,FM-8872,103,FM-8872-103,TOTAL_SCHED_A
 Pipe_Delimiter,1,pipe,Character,,FM-8872,104,FM-8872-104,PIPE_DELIMITER
-SCHED_B_IND,1,1' or '0',AlphaNumeric,1 = No Sched B,FM-8872,105,FM-8872-105,SCHED_B_IND
+SCHED_B_IND,1,1 or 0,AlphaNumeric,1 = No Sched B,FM-8872,105,FM-8872-105,SCHED_B_IND
 ,,,,0 = Sched B exists,FM-8872,106,FM-8872-106,
 Pipe_Delimiter,1,pipe,Character,,FM-8872,107,FM-8872-107,PIPE_DELIMITER
 TOTAL_SCHED_B,19,,numeric,,FM-8872,108,FM-8872-108,TOTAL_SCHED_B
 Pipe_Delimiter,1,pipe,Character,,FM-8872,109,FM-8872-109,PIPE_DELIMITER
 INSERT_DATETIME,19,YYYY-MM-DD HH24:MI:SS,Datetime,,FM-8872,110,FM-8872-110,INSERT_DATETIME
 Pipe_Delimiter,1,pipe,Character,,FM-8872,111,FM-8872-111,PIPE_DELIMITER
-Record Type Code,1,F',Character,Designates a file header,FOOTER,1,FOOTER-1,RECORD_TYPE_CODE
+Record Type Code,1,F,Character,Designates a file header,FOOTER,1,FOOTER-1,RECORD_TYPE_CODE
 Pipe_Delimiter,1,pipe,Character,,FOOTER,2,FOOTER-2,PIPE_DELIMITER
 Transmission Date,8,SYSDATE,Alphanumeric,Date on which the file is created,FOOTER,3,FOOTER-3,TRANSMISSION_DATE
 ,yyyymmdd,,,,FOOTER,4,FOOTER-4,
@@ -212,7 +212,7 @@ Pipe_Delimiter,1,pipe,Character,,FOOTER,5,FOOTER-5,PIPE_DELIMITER
 Transmission Time,4,SYSDATE,Alphanumeric,Time when file is created,FOOTER,6,FOOTER-6,TRANSMISSION_TIME
 Pipe_Delimiter,1,pipe,Character,,FOOTER,7,FOOTER-7,PIPE_DELIMITER
 Record Count,20,,Numeric,,FOOTER,8,FOOTER-8,RECORD_COUNT
-Record Type Code,1,H',Character,Designates a file header,HEADER,1,HEADER-1,RECORD_TYPE_CODE
+Record Type Code,1,H,Character,Designates a file header,HEADER,1,HEADER-1,RECORD_TYPE_CODE
 Pipe_Delimiter,X(1),pipe,Character,,HEADER,2,HEADER-2,PIPE_DELIMITER
 Transmission Date,-8,SYSDATE,Alphanumeric,Date file is created,HEADER,3,HEADER-3,TRANSMISSION_DATE
 ,yyyymmdd,,,,HEADER,4,HEADER-4,
@@ -220,12 +220,12 @@ Pipe_Delimiter,X(1),pipe,Character,,HEADER,5,HEADER-5,PIPE_DELIMITER
 Transmission Time,-4,SYSDATE,Alphanumeric,Time file is created,HEADER,6,HEADER-6,TRANSMISSION_TIME
 ,hhmm,,,,HEADER,7,HEADER-7,
 Pipe_Delimiter,X(1),pipe,Character,,HEADER,8,HEADER-8,PIPE_DELIMITER
-File ID Modifier,-1,A' for first part of alphabet transmission,Character,"This designates the file that the user downloaded.  The user has the option to download a full data file, or separate smaller data files broken up by alphabet.",HEADER,9,HEADER-9,FILE_ID_MODIFIER
-,, 'B' for second transmission,,,HEADER,10,HEADER-10,
-,,C' for third transmission,,,HEADER,11,HEADER-11,
-,,D' for fourth transmission,,,HEADER,12,HEADER-12,
-,,F' for full data transmission,,,HEADER,13,HEADER-13,
-Record Type,1,A',Alphanumeric,Designates Schedule A Record that relates to an 8872 Form ID,SCHED-A,1,SCHED-A-1,RECORD_TYPE
+File ID Modifier,-1,A for first part of alphabet transmission,Character,This designates the file that the user downloaded.  The user has the option to download a full data file; or separate smaller data files broken up by alphabet.,HEADER,9,HEADER-9,FILE_ID_MODIFIER
+,, B for second transmission,,,HEADER,10,HEADER-10,
+,,C for third transmission,,,HEADER,11,HEADER-11,
+,,D for fourth transmission,,,HEADER,12,HEADER-12,
+,,F for full data transmission,,,HEADER,13,HEADER-13,
+Record Type,1,A,Alphanumeric,Designates Schedule A Record that relates to an 8872 Form ID,SCHED-A,1,SCHED-A-1,RECORD_TYPE
 Pipe Delimiter,1,pipe,Character,,SCHED-A,2,SCHED-A-2,PIPE_DELIMITER
 Form ID Number,Up to 38 digits,,Numeric,,SCHED-A,3,SCHED-A-3,FORM_ID_NUMBER
 Pipe Delimiter,1,pipe,Character,,SCHED-A,4,SCHED-A-4,PIPE_DELIMITER
@@ -293,7 +293,7 @@ EXPENDITURE DATE,8,,AlphaNumeric,,SCHED-B,31,SCHED-B-31,EXPENDITURE_DATE
 Pipe Delimiter,1,pipe,Character,,SCHED-B,32,SCHED-B-32,PIPE_DELIMITER
 EXPENDITURE PURPOSE,512,,AlphaNumeric,,SCHED-B,33,SCHED-B-33,EXPENDITURE_PURPOSE
 Pipe Delimiter,1,pipe,Character,,SCHED-B,34,SCHED-B-34,PIPE_DELIMITER
-Record Type,1,D',Alphanumeric,Designates a Director/Officer Record for an 8871 Form Record,SCHED-D,1,SCHED-D-1,RECORD_TYPE
+Record Type,1,D,Alphanumeric,Designates a Director/Officer Record for an 8871 Form Record,SCHED-D,1,SCHED-D-1,RECORD_TYPE
 Pipe Delimiter,1,pipe,Character,,SCHED-D,2,SCHED-D-2,PIPE_DELIMITER
 Form ID Number,Up to 38 digits,,Numeric,,SCHED-D,3,SCHED-D-3,FORM_ID_NUMBER
 Pipe Delimiter,1,pipe,Character,,SCHED-D,4,SCHED-D-4,PIPE_DELIMITER
@@ -319,7 +319,7 @@ ENTITY ADDRESS ZIP CODE,5,,AlphaNumeric,,SCHED-D,23,SCHED-D-23,ENTITY_ADDRESS_ZI
 Pipe Delimiter,1,pipe,Character,,SCHED-D,24,SCHED-D-24,PIPE_DELIMITER
 ENTITY ADDRESS ZIP CODE EXT,4,,AlphaNumeric,,SCHED-D,25,SCHED-D-25,ENTITY_ADDRESS_ZIP_CODE_EXT
 Pipe Delimiter,1,pipe,Character,,SCHED-D,26,SCHED-D-26,PIPE_DELIMITER
-Record Type,1,E',Alphanumeric,Designates an EAIN Record for an 8871 form,SCHED-E,1,SCHED-E-1,RECORD_TYPE
+Record Type,1,E,Alphanumeric,Designates an EAIN Record for an 8871 form,SCHED-E,1,SCHED-E-1,RECORD_TYPE
 Pipe Delimiter,1,pipe,Character,,SCHED-E,2,SCHED-E-2,PIPE_DELIMITER
 Form ID Number,Up to 38 digits,,Numeric,,SCHED-E,3,SCHED-E-3,FORM_ID_NUMBER
 Pipe Delimiter,1,pipe,Character,,SCHED-E,4,SCHED-E-4,PIPE_DELIMITER
@@ -327,8 +327,8 @@ EAIN ID,Up to 38 digits,,Numeric,,SCHED-E,5,SCHED-E-5,EAIN_ID
 Pipe Delimiter,1,pipe,Character,,SCHED-E,6,SCHED-E-6,PIPE_DELIMITER
 ELECTION AUTHORITY ID NUMBER,30,,AlphaNumeric,,SCHED-E,7,SCHED-E-7,ELECTION_AUTHORITY_ID_NUMBER
 Pipe_Delimiter,1,pipe,Character,,SCHED-E,8,SCHED-E-8,PIPE_DELIMITER
-STATE_ISSUED,2,"2 letter abbreviations of all 50 states or ""FD"" for Federal or ""DC for District of Columbia",AlphaNumeric,,SCHED-E,9,SCHED-E-9,STATE_ISSUED
-Record Type Code,1,H',Character,Designates a file header,SCHED-H,1,SCHED-H-1,RECORD_TYPE_CODE
+STATE_ISSUED,2,2 letter abbreviations of all 50 states or FD for Federal or DC for District of Columbia,AlphaNumeric,,SCHED-E,9,SCHED-E-9,STATE_ISSUED
+Record Type Code,1,H,Character,Designates a file header,SCHED-H,1,SCHED-H-1,RECORD_TYPE_CODE
 Pipe_Delimiter,X(1),pipe,Character,,SCHED-H,2,SCHED-H-2,PIPE_DELIMITER
 Transmission Date,-8,SYSDATE,Alphanumeric,Date file is created,SCHED-H,3,SCHED-H-3,TRANSMISSION_DATE
 ,yyyymmdd,,,,SCHED-H,4,SCHED-H-4,
@@ -336,12 +336,12 @@ Pipe_Delimiter,X(1),pipe,Character,,SCHED-H,5,SCHED-H-5,PIPE_DELIMITER
 Transmission Time,-4,SYSDATE,Alphanumeric,Time file is created,SCHED-H,6,SCHED-H-6,TRANSMISSION_TIME
 ,hhmm,,,,SCHED-H,7,SCHED-H-7,
 Pipe_Delimiter,X(1),pipe,Character,,SCHED-H,8,SCHED-H-8,PIPE_DELIMITER
-File ID Modifier,-1,A' for first part of alphabet transmission,Character,"This designates the file that the user downloaded.  The user has the option to download a full data file, or separate smaller data files broken up by alphabet.",SCHED-H,9,SCHED-H-9,FILE_ID_MODIFIER
-,, 'B' for second transmission,,,SCHED-H,10,SCHED-H-10,
-,,C' for third transmission,,,SCHED-H,11,SCHED-H-11,
-,,D' for fourth transmission,,,SCHED-H,12,SCHED-H-12,
-,,F' for full data transmission,,,SCHED-H,13,SCHED-H-13,
-Record Type,1,R',Alphanumeric,Designates a Related Entity Record for an 8871 Form,SCHED-R,1,SCHED-R-1,RECORD_TYPE
+File ID Modifier,-1,A for first part of alphabet transmission,Character,This designates the file that the user downloaded.  The user has the option to download a full data file; or separate smaller data files broken up by alphabet.,SCHED-H,9,SCHED-H-9,FILE_ID_MODIFIER
+,, B for second transmission,,,SCHED-H,10,SCHED-H-10,
+,,C for third transmission,,,SCHED-H,11,SCHED-H-11,
+,,D for fourth transmission,,,SCHED-H,12,SCHED-H-12,
+,,F for full data transmission,,,SCHED-H,13,SCHED-H-13,
+Record Type,1,R,Alphanumeric,Designates a Related Entity Record for an 8871 Form,SCHED-R,1,SCHED-R-1,RECORD_TYPE
 Pipe Delimiter,1,pipe,Character,,SCHED-R,2,SCHED-R-2,PIPE_DELIMITER
 Form ID Number,Up to 38 digits,,Numeric,,SCHED-R,3,SCHED-R-3,FORM_ID_NUMBER
 Pipe Delimiter,1,pipe,Character,,SCHED-R,4,SCHED-R-4,PIPE_DELIMITER
