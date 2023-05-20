@@ -95,9 +95,9 @@ build_all( "FullDataFile.txt" )
 
 ```
 
-## Example Parsing Scripts
+## Data Parsing Details
 
-Demo how to part the ASCII data with R. 
+Some demo scripts for how to part the ASCII data with R and what types of problems (data corruption) you can expect (approximately 0.1% of the data has been corrupted by special characters breaking the ASCII format). 
 
 Using the "SUBSET ORGS H-M" data from above: "HMDataFile.txt" once unzipped. 
 
