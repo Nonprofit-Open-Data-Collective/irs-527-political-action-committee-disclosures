@@ -1,69 +1,69 @@
-IRS Field Name,Size,Valid Values,Format,Description,FORMTYPE,ORDER,VARNAME
-Record Type,1,‘A’,Alphanumeric,Designates Schedule A Record that relates to an 8872 Form ID,A,1,YES
-Pipe Delimiter,1,‘|’,Character,,A,2,NO
+IRS Field Name,Size,Valid Values,Format,Description,FORMTYPE,ORDER,VARNAME_X
+Record Type,1,â€˜Aâ€™,Alphanumeric,Designates Schedule A Record that relates to an 8872 Form ID,A,1,YES
+Pipe Delimiter,1,â€˜|â€™,Character,,A,2,NO
 Form ID Number,Up to 38 digits,,Numeric,,A,3,YES
-Pipe Delimiter,1,‘|’,Character,,A,4,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,4,NO
 SCHED A ID,Up to 38 digits,,Numeric,,A,5,YES
-Pipe Delimiter,1,‘|’,Character,,A,6,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,6,NO
 ORG NAME,70,,AlphaNumeric,,A,7,YES
-Pipe Delimiter,1,‘|’,Character,,A,8,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,8,NO
 EIN,9,,AlphaNumeric,,A,9,YES
-Pipe Delimiter,1,‘|’,Character,,A,10,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,10,NO
 CONTRIBUTOR NAME,50,,AlphaNumeric,,A,11,YES
-Pipe Delimiter,1,‘|’,Character,,A,12,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,12,NO
 CONTRIBUTOR ADDRESS 1,50,,AlphaNumeric,,A,13,YES
-Pipe Delimiter,1,‘|’,Character,,A,14,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,14,NO
 CONTRIBUTOR ADDRESS 2,50,,AlphaNumeric,,A,15,YES
-Pipe Delimiter,1,‘|’,Character,,A,16,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,16,NO
 CONTRIBUTOR ADDRESS CITY,50,,AlphaNumeric,,A,17,YES
-Pipe Delimiter,1,‘|’,Character,,A,18,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,18,NO
 CONTRIBUTOR ADDRESS STATE,2,,AlphaNumeric,,A,19,YES
-Pipe Delimiter,1,‘|’,Character,,A,20,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,20,NO
 CONTRIBUTOR ADDRESS ZIP CODE,5,,AlphaNumeric,,A,21,YES
-Pipe Delimiter,1,‘|’,Character,,A,22,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,22,NO
 CONTRIBUTOR ADDRESS ZIP EXT,4,,AlphaNumeric,,A,23,YES
-Pipe Delimiter,1,‘|’,Character,,A,24,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,24,NO
 CONTRIBUTOR EMPLOYER,70,,AlphaNumeric,,A,25,YES
-Pipe Delimiter,1,‘|’,Character,,A,26,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,26,NO
 CONTRIBUTION AMOUNT,17,,AlphaNumeric,,A,27,YES
-Pipe Delimiter,1,‘|’,Character,,A,28,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,28,NO
 CONTRIBUTOR OCCUPATION,70,,AlphaNumeric,,A,29,YES
-Pipe Delimiter,1,‘|’,Character,,A,30,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,30,NO
 AGG CONTRIBUTION YTD,17,,AlphaNumeric,,A,31,YES
-Pipe Delimiter,1,‘|’,Character,,A,32,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,32,NO
 CONTRIBUTION DATE,8,,AlphaNumeric,,A,33,YES
-Pipe Delimiter,1,‘|’,Character,,A,34,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,A,34,NO
 Record Type,1,B,Alphanumeric,Designates Schedule B Record that relates to an 8872 Form ID,B,1,YES
-Pipe Delimiter,1,‘|’,Character,,B,2,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,2,NO
 Form ID Number,Up to 38 digits,,Numeric,,B,3,YES
-Pipe Delimiter,1,‘|’,Character,,B,4,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,4,NO
 SCHED B ID,Up to 38 digits,,Numeric,,B,5,YES
-Pipe Delimiter,1,‘|’,Character,,B,6,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,6,NO
 ORG NAME,70,,AlphaNumeric,,B,7,YES
-Pipe Delimiter,1,‘|’,Character,,B,8,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,8,NO
 EIN,9,,AlphaNumeric,,B,9,YES
-Pipe Delimiter,1,‘|’,Character,,B,10,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,10,NO
 RECIEPIENT NAME,50,,AlphaNumeric,,B,11,YES
-Pipe Delimiter,1,‘|’,Character,,B,12,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,12,NO
 RECIEPIENT ADDRESS 1,50,,AlphaNumeric,,B,13,YES
-Pipe Delimiter,1,‘|’,Character,,B,14,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,14,NO
 RECIEPIENT ADDRESS 2,50,,AlphaNumeric,,B,15,YES
-Pipe Delimiter,1,‘|’,Character,,B,16,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,16,NO
 RECIEPIENT ADDRESS CITY,50,,AlphaNumeric,,B,17,YES
-Pipe Delimiter,1,‘|’,Character,,B,18,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,18,NO
 RECIEPIENT ADDRESS ST,2,,AlphaNumeric,,B,19,YES
-Pipe Delimiter,1,‘|’,Character,,B,20,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,20,NO
 RECIEPIENT ADDRESS ZIP CODE,5,,AlphaNumeric,,B,21,YES
-Pipe Delimiter,1,‘|’,Character,,B,22,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,22,NO
 RECIEPIENT ADDRESS ZIP EXT,4,,AlphaNumeric,,B,23,YES
-Pipe Delimiter,1,‘|’,Character,,B,24,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,24,NO
 RECIEPIENT EMPLOYER,70,,AlphaNumeric,,B,25,YES
-Pipe Delimiter,1,‘|’,Character,,B,26,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,26,NO
 EXPENDITURE AMOUNT,17,,AlphaNumeric,,B,27,YES
-Pipe Delimiter,1,‘|’,Character,,B,28,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,28,NO
 RECIPIENT OCCUPATION,70,,AlphaNumeric,,B,29,YES
-Pipe Delimiter,1,‘|’,Character,,B,30,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,30,NO
 EXPENDITURE DATE,8,,AlphaNumeric,,B,31,YES
-Pipe Delimiter,1,‘|’,Character,,B,32,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,32,NO
 EXPENDITURE PURPOSE,512,,AlphaNumeric,,B,33,YES
-Pipe Delimiter,1,‘|’,Character,,B,34,NO
+Pipe Delimiter,1,â€˜|â€™,Character,,B,34,NO
