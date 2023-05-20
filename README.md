@@ -37,15 +37,36 @@ OR separately by org type:
 
 Demo how to part the ASCII data with R. 
 
+Using the "SUBSET ORGS H-M" data from above: "HMDataFile.txt" once unzipped. 
+
+The letter at the start of each line designates the form type in the file. For example, in this file: 
+
+|FORM    |   Freq|
+|:-------|------:|
+|A       | 214901|
+|B       | 121371|
+|D       |  26121|
+|1       |  11075|
+|2       |   8238|
+|R       |   3475|
+|E       |   2183|
+
+*Note that numbers will change depending on when you download the data - these are cumulative files.*
+
+The form types and their corresponding variable names are found in the [**PolOrgsFileLayout.doc**](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/PolOrgsFileLayout.doc). 
+
 ```r
 library( dplyr )
 library( knitr )
 library( stringr )
 library( pander )
 
+# read local: 
+# fileName <- "HMDataFile.txt"
+# con <- file( fileName, open="r" )
 
-fileName <- "HMDataFile.txt"
-con <- file(fileName,open="r")
+url <- "https://raw.githubusercontent.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/main/HMDataFile.txt"
+con <- file( url, open="r" )
 line <- readLines(con)
 close(con)
 
@@ -101,7 +122,7 @@ table(valid.f) %>%
 
 ```
 
-Types of Forms Available - see **PolOrgsFileLayout.doc** for definitions: 
+Types of Forms Available - see [**PolOrgsFileLayout.doc**](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/PolOrgsFileLayout.doc) for definitions: 
 
 |valid.f |   Freq|
 |:-------|------:|
@@ -157,7 +178,7 @@ grep( "A\\|9591920\\|1810036", line, value=F ) # first part of problematic case
 # RECORD 2 WAS SPLIT ACROSS TWO ROWS - NEEDS MANUAL FIXING
 ```
 
-Get variable names from the **PolOrgsFileLayout.doc** file by copying the tables into Excel then filtering by lines that are not pipe delimiters.
+Get variable names from the [**PolOrgsFileLayout.doc**](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/PolOrgsFileLayout.doc) file by copying the tables into Excel then filtering by lines that are not pipe delimiters.
 
 This is the Schedule A table, for example (FORMTYPE, ORDER, and VARNAME were added): 
 
