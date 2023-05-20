@@ -69,6 +69,32 @@ Form 8872 Tables
 [**DATA DICTIONARY**](data-dictionary.md)
 
 
+## USAGE
+
+Demo database build functionality with the sample data subset ["HMDataFile.txt"](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt).
+
+```r
+source( "https://raw.githubusercontent.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/main/parse-pol-org-disclosures.R" )
+
+URL <- "https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt"
+
+d <- get_form_x( file.name=URL, form.type="A" )
+
+
+
+con <- file( URL, open="r" )
+x <- readLines(con)
+close(con)
+
+d <- get_form_x( x=line, form.type="A" )
+
+
+# WRITES ALL TABLES TO FILES
+
+build_all( "FullDataFile.txt" )
+
+```
+
 ## Example Parsing Scripts
 
 Demo how to part the ASCII data with R. 
