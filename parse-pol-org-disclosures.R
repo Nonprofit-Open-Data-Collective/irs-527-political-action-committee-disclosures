@@ -78,6 +78,9 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   vn <- paste0( "varnames.", tolower( form.type ) )
   n.col <- length( get(vn) )
   
+  not.ok <- list.length != n.col
+  cat( paste0( sum(not.ok), " problematic form ", form.type, " records dropped." ) )
+  
   these.ok <- list.length == n.col
   line.x.ok <- line.x[ these.ok ]
   
