@@ -33,7 +33,43 @@ OR separately by org type:
 * [SUBSET ORGS S-Z ~ 0.13 gig](https://forms.irs.gov/app/pod/dataDownload/dataSZ)
 
 
-## Example Parsing Script
+## Data Overview
+
+The data is stored in ASCII pipe-delimited format: 
+
+```
+H|20230513|0311|B|
+F|20230513|0311|387364|
+1|8871|9661837|1|0|0|824170729|Jones for County Council|319 15th St||Columbus|IN|47201||no@email|20180126|David A. Jones|319 15th St||Columbus|IN|47201||David A Jones|319 15th St||Columbus|IN|47201||319 15th St||Columbus|IN|47201||0||0|This is the campaign committee to elect David Jones to the Bartholomew County Council.  |20180126|2018-01-26 19:52:00|1|1
+D|9661837|152013|Jones for County Council|824170729|David A Jones|Candidate|319 15th St||Columbus|IN|47201||
+E|9662148|21805|82-4204086|FL|
+R|9662240|72908|Hospital and Healthsystem Assoc  of PA Political Action Comm HAPAC|232125904|Hospital and Healthsystem Assoc of Pennsylvania|Connected|30 North Third Street|Suite 600|Harrisburg|PA|17101||
+2|8872|426|20001128|20001231|0|0|1|0|Holland and Knight CCE|912063482|315 South Calhoun Street|Suite 600|Tallahassee|FL|32301||pgreene@hklaw.com|19791017|Patricia B. Greene|315 South Calhoun Street|Suite 600|Tallahassee|FL|32301|1872|Patricia B. Greene|315 South Calhoun Street|Suite 600|Tallahassee|FL|32301|1872|315 South Calhoun Street|Suite 600|Tallahassee|FL|32301||4|||20001107|GA|0|0|0|0|2001-01-30 17:38:50|
+A|487|861|Lawyers for Louisiana|720856107|Ronnie G. Penton|209 Hoppen Pl.||Bogalusa|LA|70427|3827|Self employed|100|Attorney|1200||
+B|481|20123|IMPACT|592217012|Thomas Howell Ferguson, PA|PO Drawer 14569||Tallahassee|FL|32317|4569|Not Applicable|785|Not Applicable|||
+```
+
+**TABLES**
+
+Data File Metadata:
+* **H**: FILE HEADER for each data release
+* **F**: Every file will contain a Footer Record.
+
+Form 8871 Tables
+* **1**: The 8871 Form Record Header contains the main form data.  All EAINs, Officers/Directors and Related Entities for the form will follow the ‘1’ Form Record in the E, D, and R records.
+* **D**: If Director and Officer records exist for an 8871 Form, each record will be printed out in a “D” record.  The “D” records for a given 8871 Form will follow it’s related “1” Record.  There may be several “D” records for any one “1” record.
+* **E**: If the PAC has provided an Election Authority Identification Number (EAIN) on the 8871 Form, each record will be printed out in an “E” record.  The “E” records for a given 8871 Form will follow its related “1” Record.  There may be several “E” records for any one “1” record.
+* **R**: If Related Entities records exist for an 8871 Form, each record will be printed out in a “R” record.  The “R” records for a given 8871 Form will follow it’s related “1” Record.  There may be several “R” records for any one “1” record.
+
+Form 8872 Tables
+* **2**: The Form Record Header contains the main form data.  All Schedule As and Bs for that form will follow the ‘2’ Form Record in ‘A’ and ‘B’ Records.  
+* **A**: If a Schedule A exists for an 8872 Form, each Schedule A record will be printed out in an “A” record.  The “A” records for a given 8872 Form will follow its related “2” Record.  There may be several “A” records for any one “2” record.
+* **B**: If a Schedule B exists for an 8872 Form, each Schedule B record will be printed out in an “B” record.  The “B” records for a given 8872 Form will follow its related “2” Record.  There may be several “B” records for any one “2” record.
+
+[**DATA DICTIONARY**](data-dictionary.md)
+
+
+## Example Parsing Scripts
 
 Demo how to part the ASCII data with R. 
 
