@@ -229,95 +229,68 @@ varnames <-
     "CONT_OCCUPATION", "CONT_AMOUNT_YTD", "CONT_DATE" )
 
 names(df) <- varnames
-head( df )
+head( df ) %>% pander( style="rmarkdown" )
 ```
 
-------------------------------------------------------------------------
- TYPE   FORM_ID   SCHED_A_ID             ORG_NAME                EIN    
------- --------- ------------ ------------------------------ -----------
-  A     9555268     38296         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-
-  A     9555268     38297         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-
-  A     9555268     38298         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-
-  A     9555268     38299         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-
-  A     9555268     38300         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-
-  A     9555268     38301         HAWAII STATE TEACHERS       521073928 
-                               ASSOCIATION POLITICAL ACTION             
-                                        COMMITTEE                       
-------------------------------------------------------------------------
+| TYPE | FORM_ID | SCHED_A_ID |
+|:----:|:-------:|:----------:|
+|  A   | 9555268 |   38296    |
+|  A   | 9555268 |   38297    |
+|  A   | 9555268 |   38298    |
+|  A   | 9555268 |   38299    |
+|  A   | 9555268 |   38300    |
+|  A   | 9555268 |   38301    |
 
 Table: Table continues below
 
  
---------------------------------------------------------------------------
-           CONT_NAME                  CONT_ADDRESS_1       CONT_ADDRESS_2 
--------------------------------- ------------------------ ----------------
- National Education Association    1201 16th Street, NW                   
 
-     Hawaii State Teachers        1200 ALA KAPUNA STREET                  
-          Association                                                     
-
-     Hawaii State Teachers        1200 ALA KAPUNA STREET                  
-          Association                                                     
-
-     Hawaii State Teachers        1200 ALA KAPUNA STREET                  
-          Association                                                     
-
-     Hawaii State Teachers        1200 ALA KAPUNA STREET                  
-          Association                                                     
-
-     Hawaii State Teachers        1200 ALA KAPUNA STREET                  
-          Association                                                     
---------------------------------------------------------------------------
+|                           ORG_NAME                           |    EIN    |
+|:------------------------------------------------------------:|:---------:|
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
+| HAWAII STATE TEACHERS ASSOCIATION POLITICAL ACTION COMMITTEE | 521073928 |
 
 Table: Table continues below
 
  
--------------------------------------------------------------------
- CONT_CITY    CONT_STATE   CONT_ZIP   CONT_ZIP_EXT   CONT_EMPLOYER 
------------- ------------ ---------- -------------- ---------------
- Washington       DC        20036         3290            n/a      
 
-  HONOLULU        HI        96819                         n/a      
-
-  HONOLULU        HI        96819                         n/a      
-
-  HONOLULU        HI        96819                         n/a      
-
-  HONOLULU        HI        96819                         n/a      
-
-  HONOLULU        HI        96819                         n/a      
--------------------------------------------------------------------
+|             CONT_NAME             |     CONT_ADDRESS_1     | CONT_ADDRESS_2 |
+|:---------------------------------:|:----------------------:|:--------------:|
+|  National Education Association   |  1201 16th Street, NW  |                |
+| Hawaii State Teachers Association | 1200 ALA KAPUNA STREET |                |
+| Hawaii State Teachers Association | 1200 ALA KAPUNA STREET |                |
+| Hawaii State Teachers Association | 1200 ALA KAPUNA STREET |                |
+| Hawaii State Teachers Association | 1200 ALA KAPUNA STREET |                |
+| Hawaii State Teachers Association | 1200 ALA KAPUNA STREET |                |
 
 Table: Table continues below
 
  
--------------------------------------------------------------
- CONT_AMOUNT   CONT_OCCUPATION   CONT_AMOUNT_YTD   CONT_DATE 
-------------- ----------------- ----------------- -----------
-    5000             n/a              5000         20030214  
 
-    15083            n/a              92298        20030630  
+| CONT_CITY  | CONT_STATE | CONT_ZIP | CONT_ZIP_EXT | CONT_EMPLOYER |
+|:----------:|:----------:|:--------:|:------------:|:-------------:|
+| Washington |     DC     |  20036   |     3290     |      n/a      |
+|  HONOLULU  |     HI     |  96819   |              |      n/a      |
+|  HONOLULU  |     HI     |  96819   |              |      n/a      |
+|  HONOLULU  |     HI     |  96819   |              |      n/a      |
+|  HONOLULU  |     HI     |  96819   |              |      n/a      |
+|  HONOLULU  |     HI     |  96819   |              |      n/a      |
 
-    15301            n/a              77215        20030531  
+Table: Table continues below
 
-    15291            n/a              61914        20030430  
+ 
 
-    15320            n/a              46623        20030331  
+| CONT_AMOUNT | CONT_OCCUPATION | CONT_AMOUNT_YTD | CONT_DATE |
+|:-----------:|:---------------:|:---------------:|:---------:|
+|    5000     |       n/a       |      5000       | 20030214  |
+|    15083    |       n/a       |      92298      | 20030630  |
+|    15301    |       n/a       |      77215      | 20030531  |
+|    15291    |       n/a       |      61914      | 20030430  |
+|    15320    |       n/a       |      46623      | 20030331  |
+|    15289    |       n/a       |      31303      | 20030228  |
 
-    15289            n/a              31303        20030228  
--------------------------------------------------------------
+
