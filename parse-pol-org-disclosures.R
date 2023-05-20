@@ -23,33 +23,26 @@
 ## | E      |   2183|
 
 
+
+## USAGE 
+
+# d <- get_form_x( file.name="HMDataFile.txt", form.type="A" )
+
+# con <- file( "HMDataFile.txt", open="r" )
+# x <- readLines(con)
+# close(con)
+# 
+# d <- get_form_x( x=line, form.type="A" )
+
+# SAVES TO FILE - NO RETURN VALUES
+# build_all( "FullDataFile.txt" )
+
+
+
+
 library( dplyr )
 library( knitr )
 library( stringr )
-
-
-dd <- 
-  get_form_x( 
-    file.name="HMDataFile.txt",
-    form.type="A" )
-
-
-
-con <- file( "HMDataFile.txt", open="r" )
-x <- readLines(con)
-close(con)
-
-dd <- 
-  get_form_x( 
-    x=line,
-    form.type="A" )
-
-
-
-build_all( "FullDataFile.txt" )
-
-
-
 
 
 build_all <- function( file.name=NULL )
