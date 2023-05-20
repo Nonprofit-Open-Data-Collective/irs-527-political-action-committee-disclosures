@@ -2,6 +2,31 @@ library( dplyr )
 library( knitr )
 library( stringr )
 
+
+## file.name: name of input text file
+##   or a valid URL with raw POFD text.
+##   Demo file URL: 
+##   https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt
+
+## x: pre-loaded text vector
+##
+##     file.name="HMDataFile.txt"
+##     con <- file(file.name,open="r")
+##     x <- readLines(con)
+##     close(con)
+
+## form.type: A, B, D, R, E, 1, 2
+## 
+## | FORM   |   Freq|
+## |:-------|------:|
+## | A      | 214901|
+## | B      | 121371|
+## | D      |  26121|
+## | 1      |  11075|
+## | 2      |   8238|
+## | R      |   3475|
+## | E      |   2183|
+
 dd <- 
   get_form_x( 
     file.name="HMDataFile.txt",
