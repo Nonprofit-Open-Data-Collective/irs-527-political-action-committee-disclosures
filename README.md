@@ -55,6 +55,8 @@ The letter at the start of each line designates the form type in the file. For e
 
 The form types and their corresponding variable names are found in the [**PolOrgsFileLayout.doc**](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/PolOrgsFileLayout.doc). 
 
+See an [R FUNCTION](https://raw.githubusercontent.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/main/parse-pol-org-disclosures.R) that generalizes the steps below. 
+
 ```r
 library( dplyr )
 library( knitr )
