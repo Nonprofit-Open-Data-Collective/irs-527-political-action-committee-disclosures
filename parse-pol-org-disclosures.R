@@ -35,7 +35,7 @@ dd <-
 
 
 
-con <- file( "HMDataFile.txt" ,open="r")
+con <- file( "HMDataFile.txt", open="r" )
 x <- readLines(con)
 close(con)
 
@@ -47,6 +47,7 @@ dd <-
 
 
 build_all( "FullDataFile.txt" )
+
 
 
 
@@ -96,8 +97,19 @@ build_all <- function( file.name=NULL )
   filename <- paste0( yyyy.mm, "-", "POL-ORGS-SCHED-R.csv" )
   write.csv( df.r, filename, row.names=F )
 
+  f1 <- substr( x, 1, 1 )
+  f2 <- substr( x, 2, 2 )
+  these <- grepl( "^[12ABDERHF]\\|", x )
+  problems <- which( ! these ) # add context
+  problems <- c( problems, (problems+1), (problems-1) ) %>% unique() %>% sort()
+  fix.these <- x[ problems ]
+  filename <- paste0( yyyy.mm, "-", "POL-ORGS-NEED-FIXING.txt" )
+  writeLines( fix.these, filename )
+
   return(NULL)
 }
+
+
 
 
 
