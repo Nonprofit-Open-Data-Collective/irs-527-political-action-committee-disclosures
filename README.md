@@ -2,7 +2,7 @@
 
 R scripts for accessing Form 8871 and Form 8872 data on 527 Political Action Committees.
 
-* [FORM 8871](form2/f8871-form-2000.pdf)
+* [FORM 8871](forms/f8871-form-2000.pdf)
 * [FORM 8871 Instructions](forms/i8871-instructions-2011.pdf)
 * [FORM 8872](forms/f8872-form-current.pdf)
 * [FORM 8872 Instructions](forms/f8872-instructions-current.pdf)
