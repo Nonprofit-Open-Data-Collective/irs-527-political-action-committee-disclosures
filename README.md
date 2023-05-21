@@ -74,25 +74,30 @@ Form 8872 Tables
 Demo database build functionality with the sample data subset ["HMDataFile.txt"](https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt).
 
 ```r
+## SOURCE PARSING FUNCTIONS
+
 source( "https://raw.githubusercontent.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/main/parse-pol-org-disclosures.R" )
 
-URL <- "https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt"
 
+##  READ HMDataFile.txt COPY FROM GITHUB
+
+URL <- "https://github.com/Nonprofit-Open-Data-Collective/irs-527-political-action-committee-disclosures/raw/main/HMDataFile.txt"
 d <- get_form_x( file.name=URL, form.type="A" )
 
 
+##  LOAD FILE ONCE, THEN PASS TO BUILD FUNCTIONS
+##     Avoids repeating data load when
+##     creating multiple tables
 
-con <- file( URL, open="r" )
-x <- readLines(con)
-close(con)
-
-d <- get_form_x( x=line, form.type="A" )
+txt <- read_textfile(URL)
+d <- get_form_x( x=txt, form.type="A" )
 
 
-# WRITES ALL TABLES TO FILES
+##  BUILD ALL TABLES AND 
+##  WRITE THEM TO FILE
 
-build_all( "FullDataFile.txt" )
-
+build_all( URL )                 # using HMDataFile.txt demo dataset above
+build_all( "FullDataFile.txt" )  # from the full data file download
 ```
 
 ## Data Parsing Details
