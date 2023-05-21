@@ -44,6 +44,13 @@ library( dplyr )
 library( knitr )
 library( stringr )
 
+read_textfile <- function(x)
+{
+  con <- file( x, open="r" )
+  txt <- readLines(con)
+  close(con)
+  return( txt )
+}
 
 build_all <- function( file.name=NULL )
 {
