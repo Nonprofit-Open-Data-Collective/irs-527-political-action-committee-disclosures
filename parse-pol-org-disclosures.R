@@ -55,9 +55,7 @@ read_textfile <- function(x)
 build_all <- function( file.name=NULL )
 {
 
-  con <- file(file.name,open="r")
-  x <- readLines(con)
-  close(con)
+  read_textfile( file.name )
 
   yyyy.mm   <- format( Sys.Date(), "%Y-%m" )
   
@@ -119,9 +117,7 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   
   if( is.null(x) )
   {
-    con <- file(file.name,open="r")
-    x <- readLines(con)
-    close(con)
+    read_textfile( file.name )
   }
   
 
