@@ -55,7 +55,7 @@ read_textfile <- function(x)
 build_all <- function( file.name=NULL )
 {
 
-  read_textfile( file.name )
+  x <- read_textfile( file.name )
 
   yyyy.mm   <- format( Sys.Date(), "%Y-%m" )
   
