@@ -117,7 +117,7 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   
   if( is.null(x) )
   {
-    read_textfile( file.name )
+    x <- read_textfile( file.name )
   }
   
 
