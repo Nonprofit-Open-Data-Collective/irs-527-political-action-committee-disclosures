@@ -1,6 +1,17 @@
 # irs-527-political-action-committee-disclosures
 
-R scripts for accessing Form 8871 and Form 8872 data on 527 Political Action Committees.
+R scripts for accessing Form 8871 and Form 8872 data on 527 Political Action Committees and producing the following datasets.
+
+```
+POL-ORGS-FM-8871.csv  >>  organization details
+POL-ORGS-SCHED-D.csv  >>  director and officer information
+POL-ORGS-SCHED-E.csv  >>  election authority IDs 
+POL-ORGS-SCHED-R.csv  >>  related entities records
+------------
+POL-ORGS-FM-8872.csv  >>  required annual disclosures 
+POL-ORGS-SCHED-A.csv  >>  individual donations
+POL-ORGS-SCHED-B.csv  >>  organizational donations 
+```
 
 * [FORM 8871](forms/f8871-form-2000.pdf)
 * [FORM 8871 Instructions](forms/i8871-instructions-2011.pdf)
