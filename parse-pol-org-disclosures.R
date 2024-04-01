@@ -235,7 +235,7 @@ get_form_x <- function( file.name=NULL, x=NULL, form.type )
   n.col <- length( get(vn) )
   
   not.ok <- list.length != n.col
-  cat( paste0( sum(not.ok), " problematic records from form ", form.type, " dropped." ) )
+  cat( paste0( sum(not.ok), " problematic records from form ", form.type, " dropped.\n" ) )
   
   these.ok <- list.length == n.col
   line.x.ok <- line.x[ these.ok ]
