@@ -9,8 +9,8 @@ POL-ORGS-SCHED-E.csv  >>  election authority IDs
 POL-ORGS-SCHED-R.csv  >>  related entities records
 ------------
 POL-ORGS-FM-8872.csv  >>  required annual disclosures 
-POL-ORGS-SCHED-A.csv  >>  individual donations
-POL-ORGS-SCHED-B.csv  >>  organizational donations 
+POL-ORGS-SCHED-A.csv  >>  donations to pacs
+POL-ORGS-SCHED-B.csv  >>  pac expenditures & transfers
 ```
 
 * [FORM 8871](forms/f8871-form-2000.pdf)
